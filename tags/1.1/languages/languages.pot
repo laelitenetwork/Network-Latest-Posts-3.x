@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Network Latest Posts\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-06 20:07+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Jose Luis Sayago Rojas <jose.sayago@laelite.info>\n"
+"Language-Team: L'Elite <opensource@laelite.info>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-Basepath: .\n"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:118
+msgid "published in"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:145
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:203
+msgid "Latest Posts"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:166
+msgid "Title"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:168
+msgid "Number of posts to show"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:170
+msgid "Number of days to limit"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:172
+msgid "Titles Only"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:174
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:179
+msgid "True"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:175
+msgid "False"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:177
+msgid "Blog ID"
+msgstr ""
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:223
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:224
+msgid "Network Latest Posts"
+msgstr ""
+

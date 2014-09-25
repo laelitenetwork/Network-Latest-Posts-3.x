@@ -1,0 +1,230 @@
+<?php
+/*
+Plugin Name: Network Latest Posts
+Plugin URI: http://en.8elite.com/2012/02/27/network-latest-posts-wordpress-3-plugin/
+Description: This plugin allows you to list the latest posts from the blogs in your network and display them in your site using shortcodes or as a widget. Based in the WPMU Recent Posts Widget by Angelo (http://bitfreedom.com/)
+Version: 1.0
+Author: L'Elite
+Author URI: https://laelite.info/
+*/
+/*  Copyright 2012  L'Elite (email : opensource@laelite.info)
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License, version 2, as 
+    published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+/*
+Parameter explanations
+$how_many: how many recent posts are being displayed
+$how_long: time frame to choose recent posts from (in days), set to 0 to disable
+$titleOnly: true (only title of post is displayed) OR false (title of post and name of blog are displayed)
+$begin_wrap: customise the start html code to adapt to different themes
+$end_wrap: customise the end html code to adapt to different themes
+
+Sample call: network_latest_posts(5, 30, true, '<li>', '</li>'); >> 5 most recent entries over the past 30 days, displaying titles only
+
+Sample Shortcode: [nlposts title='Latest Posts' number='2' days='30' titleonly=false wrapo='<div>' wrapc='</div>']
+ * title = the section's title null by default
+ * number = number of posts to display by blog 10 by default
+ * days = time frame to choose recent posts from (in days) 0 by default
+ * titleonly = if false it will display the title and the excerpt for each post true by default
+ * wrapo = html opening tag to wrap the output (for styling purposes) null by default
+ * wrapc = html closing tag to wrap the output (for styling purposes) null by default
+*/
+function network_latest_posts($how_many=10, $how_long=0, $titleOnly=true, $begin_wrap="\n<ul><li>", $end_wrap="</li></ul>") {
+	global $wpdb;
+	global $table_prefix;
+	$counter = 0;
+	
+	// get a list of blogs in order of most recent update. show only public and nonarchived/spam/mature/deleted
+	if ($how_long > 0) {
+		$blogs = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs WHERE
+			public = '1' AND archived = '0' AND mature = '0' AND spam = '0' AND deleted = '0'
+			AND last_updated >= DATE_SUB(CURRENT_DATE(), INTERVAL $how_long DAY)
+			ORDER BY last_updated DESC");
+	} else {
+		$blogs = $wpdb->get_col("SELECT blog_id FROM $wpdb->blogs WHERE
+			public = '1' AND archived = '0' AND mature = '0' AND spam = '0' AND deleted = '0'
+			ORDER BY last_updated DESC");
+	}
+
+	if ($blogs) {
+                // Count how many blogs we've found
+                $nblogs = count($blogs);
+                // Lets dig into each blog
+		foreach ($blogs as $blog) {
+			// we need _posts and _options tables for this to work
+                        // Get the options table for each blog
+			$blogOptionsTable = $wpdb->base_prefix.$blog."_options";
+                        // Get the posts table for each blog
+		    	$blogPostsTable = $wpdb->base_prefix.$blog."_posts";
+                        // Get the saved options
+			$options = $wpdb->get_results("SELECT option_value FROM
+				$blogOptionsTable WHERE option_name IN ('siteurl','blogname') 
+				ORDER BY option_name DESC");
+		        // we fetch the title, excerpt and ID for the latest post
+			if ($how_long > 0) {
+				$thispost = $wpdb->get_results("SELECT ID, post_title, post_excerpt
+					FROM $blogPostsTable WHERE post_status = 'publish'
+					AND ID > 1
+					AND post_type = 'post'
+					AND post_date >= DATE_SUB(CURRENT_DATE(), INTERVAL $how_long DAY)
+					ORDER BY id DESC LIMIT 0,$how_many");
+			} else {
+				$thispost = $wpdb->get_results("SELECT ID, post_title, post_excerpt
+					FROM $blogPostsTable WHERE post_status = 'publish'
+					AND ID > 1
+					AND post_type = 'post'
+					ORDER BY id DESC LIMIT 0,$how_many");
+			}
+			// if it is found put it to the output
+			if($thispost) {
+                                // Remember we are doing this for multiple blogs?, well we need to display
+                                // the number of posts chosen for each of them
+                                for($i=0; $i < count($thispost); $i++) {
+                                    // get permalink by ID.  check wp-includes/wpmu-functions.php
+                                    $thispermalink = get_blog_permalink($blog, $thispost[$i]->ID);
+                                    // If we want to show the excerpt, we do this
+                                    if ($titleOnly == false || $titleOnly == 'false') {
+                                            echo $begin_wrap.'<div class="network-posts blog-'.$blog.'"><h1 class="network-posts-title"><a href="'
+                                            .$thispermalink.'">'.$thispost[$i]->post_title.'</a></h1><span class="network-posts-source">'.__('published in','trans-nlp').' <a href="'
+                                            .$options[0]->option_value.'">'
+                                            .$options[1]->option_value.'</a></span><p class="network-posts-excerpt">'.$thispost[$i]->post_excerpt.'</p></div>'.$end_wrap;
+                                            $counter++;
+                                    // Otherwise we just show the titles (useful when used as a widget)
+                                    } else {
+                                            echo $begin_wrap.'<div class="network-posts blog'.$blog.'"><h1 class="network-posts-title"><a href="'.$thispermalink
+                                            .'">'.$thispost[$i]->post_title.'</a></h1></div>'.$end_wrap;
+                                            $counter++;
+                                    }
+                                }
+			}
+			// don't go over the limit
+			if($counter >= $nblogs) {
+				break; 
+			}
+		}
+	}
+}
+
+// Widget options (under the widget's section)
+function network_latest_posts_control() {
+        // Get the stored options
+	$options = get_option('network_latest_posts_widget');
+        // If we couldn't find anything, set some default values
+	if (!is_array( $options )) {
+		$options = array(
+			'title' => __('Latest Posts','trans-nlp'),
+			'number' => '10',
+			'days' => '-1',
+                        'titleonly' => true
+		);
+	}
+        // Save changes
+	if ($_POST['network_latest_posts_submit']) {
+		$options['title'] = htmlspecialchars($_POST['network_latest_posts_title']);
+		$options['number'] = intval($_POST['network_latest_posts_number']);
+		$options['days'] = intval($_POST['network_latest_posts_days']);
+                $options['titleonly'] = htmlspecialchars($_POST['network_latest_posts_titleonly']);
+                // Update hook
+		update_option("network_latest_posts_widget", $options);
+	}
+
+?>
+
+	<p>
+	<label for="network_latest_posts_title"><?php echo __('Title','trans-nlp'); ?>: </label>
+	<br /><input type="text" id="network_latest_posts_title" name="network_latest_posts_title" value="<?php echo $options['title'];?>" />
+	<br /><label for="network_latest_posts_number"><?php echo __('Number of posts to show','trans-nlp'); ?>: </label>
+	<input type="text" size="3" id="network_latest_posts_number" name="network_latest_posts_number" value="<?php echo $options['number'];?>" />
+	<br /><label for="network_latest_posts_days"><?php echo __('Number of days to limit','trans-nlp'); ?>: </label>
+	<input type="text" size="3" id="network_latest_posts_days" name="network_latest_posts_days" value="<?php echo $options['days'];?>" />
+        <br /><label for="network_latest_posts_titleonly"><?php echo __('Titles Only','trans-nlp'); ?>: </label>
+        <select name="network_latest_posts_titleonly" id="network_latest_posts_titleonly">
+            <option value="true" <?php if($options['titleonly'] == 'true'){ echo "selected='selected'"; } ?>><?php echo __('True','trans-nlp'); ?></option>
+            <option value="false" <?php if($options['titleonly'] == 'false'){ echo "selected='selected'"; } ?>><?php echo __('False','trans-nlp'); ?></option>
+        </select>
+	<input type="hidden" id="network_latest_posts_submit" name="network_latest_posts_submit" value="1" />
+	</p>
+
+<?php
+}
+
+// Widget function
+function network_latest_posts_widget($args) {
+        // Get the attributes
+	extract($args);
+        // Look for saved options
+	$options = get_option("network_latest_posts_widget");
+        // If we couldn't find anything, set some default values
+	if (!is_array( $options )) {
+		$options = array(
+			'title' => __('Latest Posts','trans-nlp'),
+			'number' => '10',
+			'days' => '-1',
+                        'titleonly' => true
+		);
+	}
+        // Display the widget
+	echo $before_widget;
+	echo "$before_title $options[title] $after_title";
+	network_latest_posts($options['number'],$options['days'],$options['titleonly'],"\n<li>","</li>");
+	echo $after_widget;
+}
+
+// Init function
+function network_latest_posts_init() {
+	// Check for the required API functions
+	if ( !function_exists('register_sidebar_widget') || !function_exists('register_widget_control') )
+		return;
+        // Register functions
+	register_sidebar_widget(__("Network Latest Posts"),"network_latest_posts_widget");
+	register_widget_control(__("Network Latest Posts"),"network_latest_posts_control");
+        register_uninstall_hook(__FILE__, 'network_latest_posts_uninstall');
+        load_plugin_textdomain('trans-nlp', false, basename( dirname( __FILE__ ) ) . '/languages');
+}
+
+// Shortcode function
+function network_latest_posts_shortcode($atts){
+    // Constructor
+    extract(shortcode_atts(array(
+        'title' => null,
+        'number' => '10',
+        'days' => '0',
+        'titleonly' => true,
+        'wrapo' => null,
+        'wrapc' => null
+    ), $atts));
+    // Avoid direct output to control the display position
+    ob_start();
+    // Check if we have set a title
+    if( !empty( $title ) ) { echo "<div class='network-latest-posts-sectitle'><h1>".$title."</h1></div>"; }
+    // Get the posts
+    network_latest_posts($number,$days,$titleonly,$wrapo,$wrapc);
+    $output_string=ob_get_contents();;
+    ob_end_clean();
+    // Put the content where we want
+    return $output_string;
+}
+// Add the shortcode
+add_shortcode('nlposts','network_latest_posts_shortcode');
+
+// Uninstall function
+function network_latest_posts_uninstall(){
+    // Delete widget options
+    delete_option('network_latest_posts_widget');
+    // Delete the shortcode hook
+    remove_shortcode('nlposts');
+}
+// Execute this stuff
+add_action("plugins_loaded","network_latest_posts_init");
+?>

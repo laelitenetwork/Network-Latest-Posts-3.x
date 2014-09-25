@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Network Latest Posts in French\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-06 20:09+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Jose Luis Sayago Rojas <jose.sayago@laelite.info>\n"
+"Language-Team: L'Elite <opensource@laelite.info>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-Basepath: .\n"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:118
+msgid "published in"
+msgstr "publi&eacute; sur"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:145
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:203
+msgid "Latest Posts"
+msgstr "Derniers Articles"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:166
+msgid "Title"
+msgstr "Titre"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:168
+msgid "Number of posts to show"
+msgstr "Nombre d'articles &#224; afficher"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:170
+msgid "Number of days to limit"
+msgstr "Nombre de jours &#224; afficher"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:172
+msgid "Titles Only"
+msgstr "Titres Seulement"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:174
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:179
+msgid "True"
+msgstr "Oui"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:175
+msgid "False"
+msgstr "Non"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:177
+msgid "Blog ID"
+msgstr "ID du Blog"
+
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:223
+#: /Applications/XAMPP/xamppfiles/htdocs/wordpress/wp-content/plugins/network-latest-posts/network-latest-posts.php:224
+msgid "Network Latest Posts"
+msgstr "Derniers Articles du R&eacute;seau"
+

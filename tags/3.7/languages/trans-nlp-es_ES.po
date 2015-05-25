@@ -6,7 +6,7 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: Jose Luis Sayago Rojas <jose.sayago@laelite.info>\n"
 "Language-Team: L'Elite <opensource@laelite.info>\n"
-"Language: fr_FR\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,29 +16,34 @@ msgstr ""
 "X-Generator: Poedit 1.7.6\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../js/nlposts_shortcode_form.php:115 ../network-latest-posts-widget.php:256
+#: ../js/nlposts_shortcode_form.php:115
+#: ../network-latest-posts-widget.php:256
 msgid "Title"
-msgstr "Titre"
+msgstr "T&iacute;tulo"
 
 #: ../js/nlposts_shortcode_form.php:120
 msgid "Instance Identifier"
-msgstr "Identificateur de l'instance"
+msgstr "Identificador de Instancia"
 
-#: ../js/nlposts_shortcode_form.php:125 ../network-latest-posts-widget.php:261
+#: ../js/nlposts_shortcode_form.php:125
+#: ../network-latest-posts-widget.php:261
 msgid "Number of Posts by Blog"
-msgstr "Nombre d'articles par Blog"
+msgstr "N&uacute;mero de Art&iacute;culos por Blog"
 
-#: ../js/nlposts_shortcode_form.php:130 ../network-latest-posts-widget.php:266
+#: ../js/nlposts_shortcode_form.php:130
+#: ../network-latest-posts-widget.php:266
 msgid "Post ID(s) to Ignore"
-msgstr "Ignorer Posts ID(s)"
+msgstr "ID(s) de Artículos a Ignorar"
 
-#: ../js/nlposts_shortcode_form.php:135 ../network-latest-posts-widget.php:271
+#: ../js/nlposts_shortcode_form.php:135
+#: ../network-latest-posts-widget.php:271
 msgid "Time Frame in Days"
-msgstr "Période de Temps (en Jours)"
+msgstr "Espacio de Tiempo en D&iacute;as"
 
-#: ../js/nlposts_shortcode_form.php:140 ../network-latest-posts-widget.php:276
+#: ../js/nlposts_shortcode_form.php:140
+#: ../network-latest-posts-widget.php:276
 msgid "Titles Only"
-msgstr "Titres Seulement"
+msgstr "Solo T&iacute;tulos"
 
 #: ../js/nlposts_shortcode_form.php:144 ../js/nlposts_shortcode_form.php:147
 #: ../js/nlposts_shortcode_form.php:342 ../js/nlposts_shortcode_form.php:345
@@ -72,7 +77,7 @@ msgstr "Titres Seulement"
 #: ../network-latest-posts-widget.php:690
 #: ../network-latest-posts-widget.php:693
 msgid "Yes"
-msgstr "Oui"
+msgstr "S&iacute;"
 
 #: ../js/nlposts_shortcode_form.php:145 ../js/nlposts_shortcode_form.php:148
 #: ../js/nlposts_shortcode_form.php:343 ../js/nlposts_shortcode_form.php:346
@@ -106,11 +111,12 @@ msgstr "Oui"
 #: ../network-latest-posts-widget.php:691
 #: ../network-latest-posts-widget.php:694
 msgid "No"
-msgstr "Non"
+msgstr "No"
 
-#: ../js/nlposts_shortcode_form.php:153 ../network-latest-posts-widget.php:289
+#: ../js/nlposts_shortcode_form.php:153
+#: ../network-latest-posts-widget.php:289
 msgid "Display Type"
-msgstr "Type d'Affichage"
+msgstr "Mostrar Todos"
 
 #: ../js/nlposts_shortcode_form.php:159 ../js/nlposts_shortcode_form.php:165
 #: ../js/nlposts_shortcode_form.php:171 ../js/nlposts_shortcode_form.php:177
@@ -119,7 +125,7 @@ msgstr "Type d'Affichage"
 #: ../network-latest-posts-widget.php:307
 #: ../network-latest-posts-widget.php:313
 msgid "Unordered List"
-msgstr "Liste Ordonnée"
+msgstr "Lista sin Ordenar"
 
 #: ../js/nlposts_shortcode_form.php:160 ../js/nlposts_shortcode_form.php:166
 #: ../js/nlposts_shortcode_form.php:172 ../js/nlposts_shortcode_form.php:178
@@ -128,7 +134,7 @@ msgstr "Liste Ordonnée"
 #: ../network-latest-posts-widget.php:308
 #: ../network-latest-posts-widget.php:314
 msgid "Ordered List"
-msgstr "Liste non Ordonnée"
+msgstr "Lista Ordenada"
 
 #: ../js/nlposts_shortcode_form.php:161 ../js/nlposts_shortcode_form.php:167
 #: ../js/nlposts_shortcode_form.php:173 ../js/nlposts_shortcode_form.php:179
@@ -137,11 +143,12 @@ msgstr "Liste non Ordonnée"
 #: ../network-latest-posts-widget.php:309
 #: ../network-latest-posts-widget.php:315
 msgid "Blocks"
-msgstr "Blocs"
+msgstr "Bloques"
 
-#: ../js/nlposts_shortcode_form.php:186 ../network-latest-posts-widget.php:322
+#: ../js/nlposts_shortcode_form.php:186
+#: ../network-latest-posts-widget.php:322
 msgid "Display Blog"
-msgstr "Afficher Blog"
+msgstr "Mostrar Blog"
 
 #: ../js/nlposts_shortcode_form.php:186 ../js/nlposts_shortcode_form.php:227
 #: ../js/nlposts_shortcode_form.php:362 ../js/nlposts_shortcode_form.php:371
@@ -150,7 +157,7 @@ msgstr "Afficher Blog"
 #: ../network-latest-posts-widget.php:503
 #: ../network-latest-posts-widget.php:512
 msgid "or"
-msgstr "ou"
+msgstr "o"
 
 #: ../js/nlposts_shortcode_form.php:186 ../js/nlposts_shortcode_form.php:227
 #: ../network-latest-posts-widget.php:322
@@ -158,295 +165,337 @@ msgstr "ou"
 msgid "Blogs"
 msgstr "Blogs"
 
-#: ../js/nlposts_shortcode_form.php:188 ../network-latest-posts-widget.php:324
+#: ../js/nlposts_shortcode_form.php:188
+#: ../network-latest-posts-widget.php:324
 msgid "Display Blog(s)"
-msgstr "Afficher Blog(s)"
+msgstr "Mostrar Blog(s)"
 
 #: ../js/nlposts_shortcode_form.php:210 ../js/nlposts_shortcode_form.php:212
 #: ../network-latest-posts-widget.php:346
 #: ../network-latest-posts-widget.php:348
 msgid "Display All"
-msgstr "Afficher Tous"
+msgstr "Mostrar Todos"
 
-#: ../js/nlposts_shortcode_form.php:227 ../network-latest-posts-widget.php:363
+#: ../js/nlposts_shortcode_form.php:227
+#: ../network-latest-posts-widget.php:363
 msgid "Ignore Blog"
-msgstr "Ignorer Blog"
+msgstr "Ignorar Blog"
 
-#: ../js/nlposts_shortcode_form.php:229 ../network-latest-posts-widget.php:365
+#: ../js/nlposts_shortcode_form.php:229
+#: ../network-latest-posts-widget.php:365
 msgid "Ignore Blog(s)"
-msgstr "Ignorer Blog(s)"
+msgstr "Ignorar Blog(s)"
 
 #: ../js/nlposts_shortcode_form.php:251 ../js/nlposts_shortcode_form.php:253
 #: ../network-latest-posts-widget.php:387
 #: ../network-latest-posts-widget.php:389
 msgid "Nothing to Ignore"
-msgstr "Rien à Ignorer"
+msgstr "Nada que Ignorar"
 
-#: ../js/nlposts_shortcode_form.php:267 ../network-latest-posts-widget.php:403
+#: ../js/nlposts_shortcode_form.php:267
+#: ../network-latest-posts-widget.php:403
 msgid "Display Thumbnails"
-msgstr "Afficher les Vignettes"
+msgstr "Mostrar Im&aacute;genes Destacadas"
 
 #: ../js/nlposts_shortcode_form.php:271 ../js/nlposts_shortcode_form.php:274
 #: ../network-latest-posts-widget.php:407
 #: ../network-latest-posts-widget.php:410
 msgid "Show"
-msgstr "Afficher"
+msgstr "Mostrar"
 
 #: ../js/nlposts_shortcode_form.php:272 ../js/nlposts_shortcode_form.php:275
 #: ../network-latest-posts-widget.php:408
 #: ../network-latest-posts-widget.php:411
 msgid "Hide"
-msgstr "Cacher"
+msgstr "Esconder"
 
-#: ../js/nlposts_shortcode_form.php:280 ../network-latest-posts-widget.php:416
+#: ../js/nlposts_shortcode_form.php:280
+#: ../network-latest-posts-widget.php:416
 msgid "Thumbnail Size"
-msgstr "Taille des Vignettes"
+msgstr "Tama&ndash;o de la Imagen Destacada"
 
-#: ../js/nlposts_shortcode_form.php:281 ../network-latest-posts-widget.php:417
+#: ../js/nlposts_shortcode_form.php:281
+#: ../network-latest-posts-widget.php:417
 msgid "Width"
-msgstr "Largeur"
+msgstr "Ancho"
 
-#: ../js/nlposts_shortcode_form.php:285 ../network-latest-posts-widget.php:421
+#: ../js/nlposts_shortcode_form.php:285
+#: ../network-latest-posts-widget.php:421
 msgid "Height"
-msgstr "Hauteur"
+msgstr "Alto"
 
-#: ../js/nlposts_shortcode_form.php:290 ../network-latest-posts-widget.php:426
+#: ../js/nlposts_shortcode_form.php:290
+#: ../network-latest-posts-widget.php:426
 msgid "Thumbnail Replacement"
-msgstr "Vignettes de Remplacement"
+msgstr "Imagen Destacada de Reemplazo"
 
 #: ../js/nlposts_shortcode_form.php:295 ../js/nlposts_shortcode_form.php:301
 #: ../js/nlposts_shortcode_form.php:307 ../js/nlposts_shortcode_form.php:313
-#: ../js/nlposts_shortcode_form.php:319 ../network-latest-posts-widget.php:432
+#: ../js/nlposts_shortcode_form.php:319
+#: ../network-latest-posts-widget.php:432
 #: ../network-latest-posts-widget.php:439
 #: ../network-latest-posts-widget.php:446
 #: ../network-latest-posts-widget.php:453
 #: ../network-latest-posts-widget.php:460
 msgid "Placeholder"
-msgstr "Cadre Gris"
+msgstr "Cuadro de Relleno"
 
 #: ../js/nlposts_shortcode_form.php:296 ../js/nlposts_shortcode_form.php:302
 #: ../js/nlposts_shortcode_form.php:308 ../js/nlposts_shortcode_form.php:314
-#: ../js/nlposts_shortcode_form.php:320 ../network-latest-posts-widget.php:433
+#: ../js/nlposts_shortcode_form.php:320
+#: ../network-latest-posts-widget.php:433
 #: ../network-latest-posts-widget.php:440
 #: ../network-latest-posts-widget.php:447
 #: ../network-latest-posts-widget.php:454
 #: ../network-latest-posts-widget.php:461
 msgid "Kittens"
-msgstr "Chatons"
+msgstr "Gatitos"
 
 #: ../js/nlposts_shortcode_form.php:297 ../js/nlposts_shortcode_form.php:303
 #: ../js/nlposts_shortcode_form.php:309 ../js/nlposts_shortcode_form.php:315
-#: ../js/nlposts_shortcode_form.php:321 ../network-latest-posts-widget.php:434
+#: ../js/nlposts_shortcode_form.php:321
+#: ../network-latest-posts-widget.php:434
 #: ../network-latest-posts-widget.php:441
 #: ../network-latest-posts-widget.php:448
 #: ../network-latest-posts-widget.php:455
 #: ../network-latest-posts-widget.php:462
 msgid "Puppies"
-msgstr "Chiots"
+msgstr "Perritos"
 
 #: ../js/nlposts_shortcode_form.php:298 ../js/nlposts_shortcode_form.php:304
 #: ../js/nlposts_shortcode_form.php:310 ../js/nlposts_shortcode_form.php:316
-#: ../js/nlposts_shortcode_form.php:322 ../network-latest-posts-widget.php:435
+#: ../js/nlposts_shortcode_form.php:322
+#: ../network-latest-posts-widget.php:435
 #: ../network-latest-posts-widget.php:442
 #: ../network-latest-posts-widget.php:449
 #: ../network-latest-posts-widget.php:456
 #: ../network-latest-posts-widget.php:463
 msgid "Custom"
-msgstr "Personnalisée"
+msgstr "Personalizada"
 
 #: ../js/nlposts_shortcode_form.php:328 ../js/nlposts_shortcode_form.php:333
 #: ../network-latest-posts-widget.php:474
 msgid "Thumbnail Class"
-msgstr "Classe CSS des Vignettes"
+msgstr "Clase para las Im&aacute;genes Destacadas"
 
 #: ../js/nlposts_shortcode_form.php:338
 msgid "Custom Thumbnails"
-msgstr "Vignettes Personnalisées"
+msgstr "Imágenes Miniatura Personalizadas"
 
-#: ../js/nlposts_shortcode_form.php:351 ../network-latest-posts-widget.php:492
+#: ../js/nlposts_shortcode_form.php:351
+#: ../network-latest-posts-widget.php:492
 msgid "Thumbnail Custom Field"
-msgstr "Champ des Vignettes Personnalisées"
+msgstr "Campo Personalizado de la Imagen"
 
-#: ../js/nlposts_shortcode_form.php:356 ../network-latest-posts-widget.php:497
+#: ../js/nlposts_shortcode_form.php:356
+#: ../network-latest-posts-widget.php:497
 msgid "Custom Post Type"
-msgstr "Type d'Article Personnalisé"
+msgstr "Tipo de Art&iacute;culo"
 
-#: ../js/nlposts_shortcode_form.php:362 ../network-latest-posts-widget.php:503
+#: ../js/nlposts_shortcode_form.php:362
+#: ../network-latest-posts-widget.php:503
 msgid "Category"
-msgstr "Catégorie"
+msgstr "Categor&iacute;a"
 
-#: ../js/nlposts_shortcode_form.php:362 ../network-latest-posts-widget.php:503
+#: ../js/nlposts_shortcode_form.php:362
+#: ../network-latest-posts-widget.php:503
 msgid "Categories"
-msgstr "Catégories"
+msgstr "Categor&iacute;as"
 
-#: ../js/nlposts_shortcode_form.php:364 ../network-latest-posts-widget.php:505
+#: ../js/nlposts_shortcode_form.php:364
+#: ../network-latest-posts-widget.php:505
 msgid "Category(ies)"
-msgstr "Catégorie(s)"
+msgstr "Categor&iacute;a(s)"
 
-#: ../js/nlposts_shortcode_form.php:371 ../network-latest-posts-widget.php:512
+#: ../js/nlposts_shortcode_form.php:371
+#: ../network-latest-posts-widget.php:512
 msgid "Tag"
-msgstr "Etiquette"
+msgstr "Etiqueta"
 
-#: ../js/nlposts_shortcode_form.php:371 ../network-latest-posts-widget.php:512
+#: ../js/nlposts_shortcode_form.php:371
+#: ../network-latest-posts-widget.php:512
 msgid "Tags"
-msgstr "Etiquettes"
+msgstr "Etiquetas"
 
-#: ../js/nlposts_shortcode_form.php:373 ../network-latest-posts-widget.php:514
+#: ../js/nlposts_shortcode_form.php:373
+#: ../network-latest-posts-widget.php:514
 msgid "Tag(s)"
-msgstr "Etiquettes"
+msgstr "Etiqueta(s)"
 
-#: ../js/nlposts_shortcode_form.php:379 ../network-latest-posts-widget.php:520
+#: ../js/nlposts_shortcode_form.php:379
+#: ../network-latest-posts-widget.php:520
 msgid "Paginate Results"
-msgstr "Resultats par Page"
+msgstr "Resultados por P&aacute;ginas"
 
-#: ../js/nlposts_shortcode_form.php:392 ../network-latest-posts-widget.php:533
+#: ../js/nlposts_shortcode_form.php:392
+#: ../network-latest-posts-widget.php:533
 msgid "Posts per Page"
-msgstr "Articles par Page"
+msgstr "Art&iacute;culos por P&aacute;gina"
 
-#: ../js/nlposts_shortcode_form.php:397 ../network-latest-posts-widget.php:538
+#: ../js/nlposts_shortcode_form.php:397
+#: ../network-latest-posts-widget.php:538
 msgid "Display Content"
-msgstr "Afficher Contenu"
+msgstr "Mostrar Contenido"
 
-#: ../js/nlposts_shortcode_form.php:411 ../network-latest-posts-widget.php:552
+#: ../js/nlposts_shortcode_form.php:411
+#: ../network-latest-posts-widget.php:552
 msgid "Excerpt Length"
-msgstr "Longueur de l'extrait"
+msgstr "Largo del Extracto"
 
-#: ../js/nlposts_shortcode_form.php:416 ../network-latest-posts-widget.php:557
+#: ../js/nlposts_shortcode_form.php:416
+#: ../network-latest-posts-widget.php:557
 msgid "Auto-Excerpt"
-msgstr "Extrait Automatique"
+msgstr "Auto-Extracto"
 
-#: ../js/nlposts_shortcode_form.php:429 ../network-latest-posts-widget.php:570
+#: ../js/nlposts_shortcode_form.php:429
+#: ../network-latest-posts-widget.php:570
 msgid "Excerpt Trail"
-msgstr "Type de lien de l'extrait"
+msgstr "Tipo de cola del Extracto"
 
 #: ../js/nlposts_shortcode_form.php:433 ../js/nlposts_shortcode_form.php:436
 #: ../network-latest-posts-widget.php:574
 #: ../network-latest-posts-widget.php:577
 msgid "Text"
-msgstr "Texte"
+msgstr "Texto"
 
 #: ../js/nlposts_shortcode_form.php:434 ../js/nlposts_shortcode_form.php:437
 #: ../network-latest-posts-widget.php:575
 #: ../network-latest-posts-widget.php:578
 msgid "Image"
-msgstr "Image"
+msgstr "Imagen"
 
-#: ../js/nlposts_shortcode_form.php:442 ../network-latest-posts-widget.php:607
+#: ../js/nlposts_shortcode_form.php:442
+#: ../network-latest-posts-widget.php:607
 msgid "Sort by Date"
-msgstr "Trier par Date"
+msgstr "Ordenar por Fecha"
 
-#: ../js/nlposts_shortcode_form.php:455 ../network-latest-posts-widget.php:620
+#: ../js/nlposts_shortcode_form.php:455
+#: ../network-latest-posts-widget.php:620
 msgid "Sort by Blog ID"
-msgstr "Trier par ID de Blog"
+msgstr "Ordenar por ID de Blog"
 
-#: ../js/nlposts_shortcode_form.php:468 ../network-latest-posts-widget.php:633
+#: ../js/nlposts_shortcode_form.php:468
+#: ../network-latest-posts-widget.php:633
 msgid "Sorting Order"
-msgstr "Ordre de Tri"
+msgstr "Orden de"
 
 #: ../js/nlposts_shortcode_form.php:473 ../js/nlposts_shortcode_form.php:476
-#: ../js/nlposts_shortcode_form.php:480 ../network-latest-posts-widget.php:638
+#: ../js/nlposts_shortcode_form.php:480
+#: ../network-latest-posts-widget.php:638
 #: ../network-latest-posts-widget.php:641
 #: ../network-latest-posts-widget.php:645
 msgid "Newest to Oldest"
-msgstr "Plus récent au Plus ancien"
+msgstr "Recientes a Antiguos"
 
 #: ../js/nlposts_shortcode_form.php:474 ../js/nlposts_shortcode_form.php:477
-#: ../js/nlposts_shortcode_form.php:481 ../network-latest-posts-widget.php:639
+#: ../js/nlposts_shortcode_form.php:481
+#: ../network-latest-posts-widget.php:639
 #: ../network-latest-posts-widget.php:642
 #: ../network-latest-posts-widget.php:646
 msgid "Oldest to Newest"
-msgstr "Plus Ancien au Plus récent"
+msgstr "Antiguos a Recientes"
 
 #: ../js/nlposts_shortcode_form.php:485 ../js/nlposts_shortcode_form.php:488
-#: ../js/nlposts_shortcode_form.php:492 ../network-latest-posts-widget.php:650
+#: ../js/nlposts_shortcode_form.php:492
+#: ../network-latest-posts-widget.php:650
 #: ../network-latest-posts-widget.php:653
 #: ../network-latest-posts-widget.php:657
 msgid "Ascendant"
-msgstr "Ascendant"
+msgstr "Ascendente"
 
 #: ../js/nlposts_shortcode_form.php:486 ../js/nlposts_shortcode_form.php:489
-#: ../js/nlposts_shortcode_form.php:493 ../network-latest-posts-widget.php:651
+#: ../js/nlposts_shortcode_form.php:493
+#: ../network-latest-posts-widget.php:651
 #: ../network-latest-posts-widget.php:654
 #: ../network-latest-posts-widget.php:658
 msgid "Descendant"
-msgstr "Descendant"
+msgstr "Descendente"
 
-#: ../js/nlposts_shortcode_form.php:498 ../network-latest-posts-widget.php:663
+#: ../js/nlposts_shortcode_form.php:498
+#: ../network-latest-posts-widget.php:663
 msgid "Total Number of Posts"
-msgstr "Nombre Total d'articles à Afficher"
+msgstr "N&uacute;mero Total de Art&iacute;culos para Mostrar"
 
-#: ../js/nlposts_shortcode_form.php:503 ../network-latest-posts-widget.php:668
+#: ../js/nlposts_shortcode_form.php:503
+#: ../network-latest-posts-widget.php:668
 msgid "Post Status"
-msgstr "Etat de Publication"
+msgstr "Estado del Art&iacute;culo"
 
-#: ../js/nlposts_shortcode_form.php:508 ../network-latest-posts-widget.php:673
+#: ../js/nlposts_shortcode_form.php:508
+#: ../network-latest-posts-widget.php:673
 msgid "Full Metadata"
-msgstr "Métadonnées Complètes"
+msgstr "Metadatos Completos"
 
-#: ../js/nlposts_shortcode_form.php:521 ../network-latest-posts-widget.php:712
+#: ../js/nlposts_shortcode_form.php:521
+#: ../network-latest-posts-widget.php:712
 msgid "Custom CSS Filename"
-msgstr "Nom de Fichier CSS Personnalisé"
+msgstr "Nombre de Fichero CSS Personalizado"
 
-#: ../js/nlposts_shortcode_form.php:526 ../network-latest-posts-widget.php:717
+#: ../js/nlposts_shortcode_form.php:526
+#: ../network-latest-posts-widget.php:717
 msgid "Custom CSS Class for the list wrapper"
-msgstr "Classe CSS pour la balise que contient les listes (frapper)"
+msgstr "Clases CSS Personalizadas para el Contenedor (wrapper) de las listas"
 
-#: ../js/nlposts_shortcode_form.php:531 ../network-latest-posts-widget.php:722
+#: ../js/nlposts_shortcode_form.php:531
+#: ../network-latest-posts-widget.php:722
 msgid "Custom CSS Class for the block wrapper"
-msgstr "Classe CSS pour la balise que contient les blocs (wrapper)"
+msgstr "Clases CSS Personalizadas para el Contenedor (wrapper) de los bloques"
 
-#: ../js/nlposts_shortcode_form.php:536 ../network-latest-posts-widget.php:699
+#: ../js/nlposts_shortcode_form.php:536
+#: ../network-latest-posts-widget.php:699
 msgid "Random Posts"
-msgstr "Articles Al&eacute;atoires"
+msgstr "Art&iacute;culos Aleatorios"
 
 #: ../js/nlposts_shortcode_form.php:548
 msgid "Insert Shortcode"
-msgstr "Insérer Shortcode"
+msgstr "Insertar Shortcode"
 
 #: ../network-latest-posts-widget.php:82
 msgid "Network Latest Posts Widget"
-msgstr "Widget de Derniers Articles du R&eacute;seau"
+msgstr "Art&iacute;culos Recientes de mi Red Widget"
 
 #: ../network-latest-posts-widget.php:469
 msgid "Custom Thumbnail URL"
-msgstr "URL de Vignette Personnalisée"
+msgstr "URL de Imagen Miniatura Personalizada"
 
 #: ../network-latest-posts-widget.php:479
 msgid "Custom Thumbnail"
-msgstr "Vignette Personnalisée"
+msgstr "Imagen Miniatura Personalizada"
 
 #: ../network-latest-posts-widget.php:583
 msgid "Use Publication Date"
-msgstr "Utiliser Date de Publication"
+msgstr "Usar Fecha de Publicación"
 
 #: ../network-latest-posts-widget.php:595
 msgid "Honor Sticky Posts"
-msgstr "Respecter les Articles Mis en Avant"
+msgstr "Respetar Entradas Fijas"
 
 #: ../network-latest-posts-widget.php:686
 msgid "Display Post Date"
-msgstr "Afficher la Date des Articles"
+msgstr "Mostrar Fecha de Artículos"
 
 #: ../network-latest-posts.php:237
 msgid "Sorry, I couldn't find any recent posts matching your parameters."
-msgstr "Désolé, je n'ai pas trouvé des articles correspondant aux paramètres saisis."
+msgstr ""
+"Lo siento, no pude encontrar ningún artículo que coincidiera con tus "
+"parámetros."
 
 #: ../network-latest-posts.php:738 ../network-latest-posts.php:801
 #: ../network-latest-posts.php:978 ../network-latest-posts.php:1041
 msgid "Published on"
-msgstr "Publi&eacute; sur"
+msgstr "Publicado en"
 
 #: ../network-latest-posts.php:738 ../network-latest-posts.php:740
 #: ../network-latest-posts.php:801 ../network-latest-posts.php:803
 #: ../network-latest-posts.php:978 ../network-latest-posts.php:980
 #: ../network-latest-posts.php:1041 ../network-latest-posts.php:1043
 msgid "by"
-msgstr "par"
+msgstr "por"
 
 #: ../network-latest-posts.php:740 ../network-latest-posts.php:803
 #: ../network-latest-posts.php:980 ../network-latest-posts.php:1043
 msgid "Published"
-msgstr "Publi&eacute;"
+msgstr "Publicado"
 
 #: ../network-latest-posts.php:846
 msgid "&laquo;"
@@ -459,32 +508,32 @@ msgstr "&raquo;"
 #: ../network-latest-posts.php:1176 ../network-latest-posts.php:1180
 #: ../network-latest-posts.php:1184
 msgid "more"
-msgstr "lire le reste"
+msgstr "leer el resto"
 
 #: ../network-latest-posts.php:1328 ../network-latest-posts.php:1329
 msgid "Network Latest Posts"
-msgstr "Derniers Articles du R&eacute;seau"
+msgstr "Art&iacute;culos Recientes de la Red"
 
 #~ msgid "on"
-#~ msgstr "le"
+#~ msgstr "el"
 
 #~ msgid "Latest Posts"
-#~ msgstr "Derniers Articles"
+#~ msgstr "Art&iacute;culos Recientes"
 
 #~ msgid "Number of days to limit"
-#~ msgstr "Nombre de jours &#224; afficher"
+#~ msgstr "N&uacute;mero de D&iacute;as"
 
 #~ msgid "True"
-#~ msgstr "Oui"
+#~ msgstr "Si"
 
 #~ msgid "False"
-#~ msgstr "Non"
+#~ msgstr "No"
 
 #~ msgid "Blog(s) ID(s) to Ignore Separate by Commas"
-#~ msgstr "ID du/des Blog(s) à Ignorer séparés par des virgules"
+#~ msgstr "ID(s) del/los Blog(s) a Ignorar Separados por Comas"
 
 #~ msgid "Category(ies) Slug(s) Separate by Commas"
-#~ msgstr "Identifiant de Cat&eacute;gorie(s) séparés par des virgules"
+#~ msgstr "Slug de la(s) Categor&iacute;a(s) Separado por Comas"
 
 #~ msgid "Tag(s) Slug(s) Separate by Commas"
-#~ msgstr "Identifiant de Tag(s) séparés par des virgules"
+#~ msgstr "Slug de la(s) Etiqueta(s) Separados por Comas"
